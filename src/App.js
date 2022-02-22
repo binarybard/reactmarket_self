@@ -1,15 +1,10 @@
 import './App.css';
-import TimerComponent from './timer';
+import MainPageComponent from './main/index.js';
 
-function App() {  
+function App() {
   return (
-    <div>
-      <TimerComponent />    
-      <h1>바뀐 부분</h1>
-      <h1>깃헙에 바뀐 부분</h1>
-    </div>
+    <MainPageComponent />    
   );
 }
 
 export default App;
-
