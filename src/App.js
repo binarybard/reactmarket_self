@@ -7,6 +7,7 @@ import ProductPage from "./product";
 function App() {
   return (
     <div>
+      <h1>집에서 변경하기</h1>
       <Switch>
         <Route exact={true} path={"/"}>
           <MainPageComponent />;
