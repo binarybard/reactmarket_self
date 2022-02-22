@@ -6,6 +6,7 @@ function App() {
     <div>
       <TimerComponent />    
       <h1>바뀐 부분</h1>
+      <h1>깃헙에 바뀐 부분</h1>
     </div>
   );
 }
