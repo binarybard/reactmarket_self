@@ -3,7 +3,10 @@ import TimerComponent from './timer';
 
 function App() {  
   return (
-    <TimerComponent />
+    <div>
+      <TimerComponent />    
+      <h1>바뀐 부분</h1>
+    </div>
   );
 }
 
