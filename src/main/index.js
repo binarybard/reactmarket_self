@@ -1,6 +1,7 @@
 import "./style.css";
 import axios from "axios";
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function MainPage() {
   const [products, setProducts] = React.useState([]);
@@ -35,6 +36,9 @@ function MainPage() {
             products.map(function (product, index) {
               return (
                 <div key={index} className="product-card">
+                  {/* /<Link className="product-link" to={'/product/'+index}> */}
+                  <Link className="product-link" to={`/product/${index}`}>
+                    {/* index는 map 배열의 인덱스이고 0부터 시작. 첫번째 카드가 0 */}
                   <div>
                     <img className="product-img" src={product.imageUrl} />
                   </div>
@@ -49,6 +53,7 @@ function MainPage() {
                       <span>{product.seller}</span>
                     </div>
                   </div>
+                  </Link>
                 </div>
               );
             })

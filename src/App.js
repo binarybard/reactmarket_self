@@ -6,14 +6,12 @@ import ProductPage from "./product";
 
 function App() {
   return (
-    <div>
-      <h1>집에서 변경하기</h1>
+    <div>      
       <Switch>
         <Route exact={true} path={"/"}>
           <MainPageComponent />;
         </Route>
-        <Route exact={true} path="/product">
-          {/* {} 생략 가능 */}
+        <Route exact={true} path="/product/:id">            
           <ProductPage />
         </Route>
         <Route exact={true} path="/upload">
